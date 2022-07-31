@@ -1,0 +1,19 @@
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        """
+        Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+        You may assume that each input would have exactly one solution, and you may not use the same element twice.
+        You can return the answer in any order.
+
+        Approach: HashMap population while iterating
+        Complexity Analysis:
+        Time: O(n)
+        Space: O(n)
+        """
+        check = {}
+        for i,n in enumerate(nums):
+            numberToGet = target-n
+            if numberToGet in check:
+                return [i, check.get(numberToGet)]
+            check.update({n: i})
+        return [-1,-1]
