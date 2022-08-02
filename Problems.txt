@@ -11,7 +11,7 @@ Arrays
 10. Container With Most Water
 
 Binary 
-1. um of Two Integers
+1. Sum of Two Integers
 2. Number of 1 Bits
 3. Counting Bits
 4. Missing Number
